@@ -1,0 +1,20 @@
+                preferences.map {
+                    Rectangle()
+                        .fill(.green)
+                        .frame(
+                            width: geometry[$0].width,
+                            height: geometry[$0].height
+                        )
+                        .offset(
+                            x: geometry[$0].minX,
+                            y: geometry[$0].minY
+                        )
+                }
+            }
+        }
+        
+    }
+}
+
+
+struct AnchorPreferenceUsage: View {
